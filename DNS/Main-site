@@ -1,0 +1,20 @@
+$TTL 3600
+@       IN      SOA     ns1.cryptotrackr.duckdns.org. admin.cryptotrackr.duckdns.org. (
+                        2024060203 ; Serial (YYYYMMDDNN format)
+                        604800     ; Refresh
+                        86400      ; Retry
+                        2419200    ; Expire
+                        604800 )   ; Negative Cache TTL
+;
+@       IN      NS      ns1.cryptotrackr.duckdns.org.
+ns1     IN      A       10.0.2.12 ;
+
+; Registros A para tu sitio web
+@       IN      A       34.231.121.211
+web1   IN      A       10.0.6.251
+
+; Servidores de aws
+;CryptoTrackr IN A       10.0.6.251
+Proxy IN        A       10.0.1.61
+Bastion IN      A       10.0.7.207
+BaseDatos IN    A       10.0.7.25
